@@ -1,0 +1,89 @@
+@import "_Fontes";
+
+.Conversor {
+    display: flex;
+    flex-direction: column;
+    background: #edf1ff;
+    height: 15em;
+    width: 30em;
+    border-radius: .2rem;
+    margin: auto;
+    .flag-container {
+        // border: 0.1em red solid;
+        display: flex;
+        align-items: center;
+        height: 30%;
+        padding-left: 1em;
+        // padding: 1em 1.5em;
+        // padding: 0 1.5em;
+        background: #125c6d;
+        
+        .flag {
+            width: 2.5em;
+            height: 2.5em;
+            margin-left: 1em;
+            
+        }
+        .moeda {
+            color: #edf1ff;
+            margin-left: 0.5em;
+            font-size: 1.2rem;
+            font-family: Mont;
+        }
+    }
+
+    .input-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 70%;
+        place-items: center;
+        padding: 1em;
+        p {
+            padding-left: .5em;
+            .cifrao {
+                font-size: 3rem;
+                color: #29313A;
+                font-family: Mont-Semi;
+            }
+        }
+        .input-valor {
+            font-family: Mont-Semi;
+            color: #29313A;
+            border: none;
+            margin-right: .3em;
+            background: #edf1ff;
+            border-bottom: 0.03em #ccc solid;
+            font-size: 4rem;
+            width: 4.5em;
+            text-align: center;
+            &:focus {
+                outline: none;
+                border-bottom: 0.04em #000 solid;
+            }
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+            }
+            &[type="number"] {
+                -moz-appearance: textfield;
+            }
+            &::placeholder {
+                color: #000;
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .Conversor{
+        width: 25em;
+
+        .input-container {
+            .input-valor{
+                width: 4em;
+            }
+        }
+    }
+}

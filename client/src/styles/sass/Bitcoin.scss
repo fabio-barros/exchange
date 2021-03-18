@@ -1,0 +1,79 @@
+
+.Bitcoin {
+    display: grid;
+    width: 100%;
+    height: 33em;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    background: #29313A;
+
+    .main-banner {
+        padding: 2em;
+        margin-top: 2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 6em;
+            height: 6em;
+
+        }
+        h1 {
+            margin-left: 0.3em;
+            font-family: Mont;
+            font-size: 5rem;
+            color: #f4f9ff;
+        }
+    }
+    .conversor-container {
+        width: 60em;
+        margin: 2em;
+        display: flex;
+        justify-content: center;
+        height: 15em;
+        font-family: Mont;
+        // border: 0.1em red solid;
+    }
+
+   
+}
+
+.bitcoin-scroll-header {
+    display: flex;
+    width: 100%;
+    background: #002868;
+    align-items: center;
+    justify-content: center;
+    .bitcoin-menu {
+        height: 5em;
+        // width: 90%;
+        // border: 0.05em #edf1ff solid;
+        display: flex;
+        align-items: center;
+        li {
+            //    margin: auto;
+            padding: 0 6em;
+            a {
+                font-family: Roboto;
+                font-size: 1.6rem;
+                color: #f4f9ff;
+
+                &:hover {
+                    color: #a7092a;
+                    padding-bottom: 0.5em;
+                    border-bottom: 0.2rem solid #a7092a;
+                }
+                &:focus {
+                    padding-bottom: 0.5em;
+                    border-bottom: 0.2rem solid #a7092a;
+                }
+            }
+        }
+    }
+}
+
+.eurocomercial-info {
+    height: 30em;
+    
+}

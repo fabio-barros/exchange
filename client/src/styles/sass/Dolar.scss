@@ -1,0 +1,225 @@
+h2 {
+    // width: 100%;
+    font-family: Mont-Medium;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    color: #125c6d;
+    // border: 0.2rem solid #a7092a;
+}
+
+.main-container {
+    padding: 0;
+    margin: 0;
+
+    .intro-container {
+        // border: 2px dashed yellow;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // width: 100%;
+        height: 40em;
+        background: #2f4858;
+
+        .banner-row {
+            margin-top: 2em;
+            // border: 2px dashed green;
+            .banner {
+                // border: 2px dashed red;
+                padding: 2em;
+                margin-top: 2em;
+                display: flex;
+                align-items: center;
+                img {
+                    width: 6em;
+                    height: 6em;
+                    border: 0.05em #f4f9ff solid;
+                }
+                h1 {
+                    margin-left: 0.3em;
+                    font-family: Mont;
+                    font-size: 5rem;
+                    color: #f4f9ff;
+                }
+            }
+        }
+        .converter-row {
+            .converter-col {
+                // border: 2px dashed yellow;
+                width: 60em;
+                margin: 2em;
+                display: flex;
+                // justify-content: center;
+                // flex-wrap: wrap;
+                height: 15em;
+                font-family: Mont;
+                // border: 0.05em #edf1ff solid;
+            }
+            .Arrow {
+                display: flex;
+                align-items: center;
+                content: "8644";
+                color: #edf1ff;
+                font-size: 4rem;
+                padding: 0.1em;
+                // width: 10%;
+            }
+        }
+    }
+
+    .info-nav-container {
+        margin: 0;
+        padding: 0;
+        .info-nav-row {
+            .info-nav-col {
+                .info-nav {
+                    display: flex;
+                    width: 100%;
+                    background: #125c6d;
+                    align-items: center;
+                    justify-content: center;
+                    .menu {
+                        height: 5em;
+                        margin: 0;
+                        // width: 90%;
+                        // border: 0.05em #edf1ff solid;
+                        display: flex;
+                        align-items: center;
+                        white-space: nowrap;
+                        overflow: auto;
+                        li {
+                            //    margin: auto;
+                            padding: 0 6em;
+                            a {
+                                font-family: Roboto;
+                                font-size: 1.6rem;
+                                color: #f4f9ff;
+                                text-decoration: none;
+
+                                &:hover {
+                                    color: #a7092a;
+                                    padding-bottom: 0.5em;
+                                    border-bottom: 0.2rem solid #a7092a;
+                                }
+                                &:focus {
+                                    padding-bottom: 0.5em;
+                                    border-bottom: 0.2rem solid #a7092a;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .info-main-container {
+        background: #edf1ff;
+        .graph-container {
+            padding-top: 4em;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            // border: #125c6d solid 2px;
+            .graph-row {
+                // border: #125c6d solid 2px;
+                width: 90%;
+                .graph-col {
+                    h3 {
+                        
+                        font-family: Mont-Medium;
+                        font-size: 1.3rem;
+                        margin-top: 1rem;
+                        margin-bottom: 1rem;
+                        color: #125c6d;
+                    }
+                }
+            }
+        }
+        .info-container {
+            .info-row {
+                padding: 4em;
+                padding-top: 4em;
+                .dolarcomercial-info,
+                .dolarturismo-info,
+                .sobreodolar-info,
+                .graph-col {
+                    p {
+                        // padding: 1em;
+                        // line-height: 2rem;
+                        font-family: Roboto;
+                        font-size: 1.2rem;
+                        color: #41493a;
+                        text-align: justify;
+                    }
+                    h3 {
+                        // padding: 0.3em;
+                        font-family: Mont-Medium;
+                        font-size: 1.3rem;
+                        margin-top: 1rem;
+                        margin-bottom: 1rem;
+                        color: #125c6d;
+                    }
+                }
+            }
+        }
+    }
+}
+// @media (max-width: 1200px) {
+//     .dolar-info {
+//         .dolarcomercial-info,
+//         .dolarturismo-info {
+//             width: 60%;
+//         }
+//     }
+// }
+// @media (max-width: 1024px) {
+//     .dollar-main {
+//         .conversor-container {
+//             width: 55em;
+//         }
+//     }
+//     .dolar-info {
+//         .dolarcomercial-info,
+//         .dolarturismo-info {
+//             width: 70%;
+//         }
+//     }
+// }
+// @media (max-width: 992px) {
+// }
+// @media (max-width: 860px) {
+//     .dolar-info {
+//         .dolarcomercial-info,
+//         .dolarturismo-info {
+//             width: 80%;
+//         }
+//     }
+// }
+
+// @media (max-width: 768px) {
+//     .dollar-main {
+//         height: 40em;
+//         // display: flex;
+//         // flex-direction: column;
+//         // .main-banner {
+//         //     // flex-direction: column;
+//         // }
+
+//         .conversor-container {
+//             flex-direction: column;
+//             height: 30em;
+//             width: 30em;
+//         }
+//         // .Arrow {
+//         //     // display: none;
+//         // }
+//     }
+//     .dolar-info {
+//         .dolarcomercial-info,
+//         .dolarturismo-info {
+//             width: 80%;
+//         }
+//     }
+// }

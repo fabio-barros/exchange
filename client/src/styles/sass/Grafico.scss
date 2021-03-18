@@ -1,0 +1,69 @@
+@import "_Fontes";
+
+.chart-container {
+    display: flex;
+    flex-direction: column;
+    height: 35em;
+    // width: 100%;
+    // border: 0.05rem green solid;
+    // justify-content: center;
+    // align-items: center;
+    background-color: #edf1ff;
+    .Grafico {
+        // border: 0.05rem green solid;
+        background-color: #edf1ff;
+        border-radius: 5px;
+        height: 90%;
+        width: 95%;
+        padding: 1rem;
+    }
+    .chart-header {
+        // border: 0.2rem solid #a7092a;
+        display: flex;
+        width: 50%;
+        margin-top: 2rem;
+        h2 {
+            width: 100%;
+            font-family: Mont-Medium;
+            font-size: 3rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            color: #125c6d;
+            // border: 0.2rem solid #a7092a;
+        }
+    }
+    .chart-nav {
+        // width: 90%;
+        // border: 0.2rem solid green;
+        // margin-bottom: 1em;
+        .chart-buttons {
+            display: flex;
+            align-items: center;
+            padding: 0.2em;
+            // border: 0.2rem solid red;
+            li {
+                padding: 0.2em 0;
+                button {
+                    font-family: Mont;
+                    font-size: 0.8em;
+                    color: #a5ae9d;
+                    border: 0.1em solid #a5ae9d;
+                    background: #edf1ff;
+                    border-radius: 0.4em;
+                    padding: 0.5em;
+                    margin-right: 0.5em;
+                    cursor: pointer;
+                    &:hover {
+                        color: #007a91;
+                        border-color: #007a91;
+                    }
+                    &:focus {
+                        color: #000;
+                        background: #a5ae9d;
+                        border: 0.1em solid #a5ae9d;
+                    }
+                }
+            }
+        }
+    }
+}

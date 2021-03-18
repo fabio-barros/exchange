@@ -1,0 +1,112 @@
+.header-container {
+    border-bottom: 0.15rem solid;
+    border-image: radial-gradient(ellipse, #e6e9ed, #53b86a) 1;
+    background: #f4f9ff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.header {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    font-family: Mont-Medium;
+    padding: 0 3em;
+    height: 3.8em;
+    justify-content: space-between;
+    background-color: #f4f9ff;
+
+    .Logo {
+        color: #008570;
+    }
+
+    .header-menu {
+        display: flex;
+        // flex: .3;
+        margin: 0;
+        li {
+            padding: 0 2em;
+
+            a {
+                font-size: 1.25rem;
+                // font-weight: 400;
+                // font-weight: 600;
+                text-decoration: none;
+                color: #008570;
+
+                &:hover,
+                &:focus {
+                    color: #000;
+                    border-bottom: 0.1rem solid #53b86a;
+                }
+            }
+        }
+    }
+
+    .Sobre {
+        color: #008570;
+    }
+}
+.menu-btn {
+    position: absolute;
+    cursor: pointer;
+    top: 1em;
+    left: 1em;
+    z-index: 2;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: 3em;
+        width: 100%;
+        padding: 0;
+        .Logo {
+            padding-left: 2.7em;
+            margin: auto;
+        }
+        .Sobre {
+            padding-right: 1em;
+            font-size: 0.8rem;
+        }
+
+        .header-menu {
+            display: block;
+            position: absolute;
+            top: 3em;
+            left: 0;
+            background: #e6e9ed;
+            width: 50%;
+            height: 100%;
+            transform: translateX(-50em);
+            transition: transform 0.5s ease-in-out;
+            border-right: #ccc 0.1em solid;
+            opacity: 0.9;
+            padding: 2em;
+
+            li {
+                padding: 1em;
+                border-bottom: 0.1em #ccc solid;
+
+                &:last-child {
+                    border-bottom: 0;
+                }
+            }
+        }
+
+        .header-menu.show {
+            transform: translateX(-0.5em);
+        }
+    }
+
+    .menu-btn {
+        display: block;
+
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+}
