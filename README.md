@@ -15,4 +15,7 @@
 - [Axios](https://axios-http.com/)
 - [Firebase Hosting](https://firebase.google.com/docs/hosting)
 
+![Exchange Demo](demo/exchangedemo.gif)
+
 ### 🚀  https://dollar-exchange-be964.firebaseapp.com/
+
